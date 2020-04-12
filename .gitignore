@@ -1,0 +1,5 @@
+node_modules
+###> artifacts videos and screenshots ###
+/cypress/videos/
+/cypress/screenshots/
+###< artifacts videos and screenshots ###

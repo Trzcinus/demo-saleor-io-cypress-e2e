@@ -1,0 +1,21 @@
+{
+    "requestTimeout" : 5000,
+    "numTestsKeptInMemory": 10,
+    "responseTimeout" : 5000,
+    "pageLoadTimeout": 5000,
+    "viewportHeight": 1080,
+    "viewportWidth": 1920,
+    "baseUrl": "https://demo.saleor.io/",
+    "env": {
+        "accounts": {
+            "user":{
+                "email": "admin@example.com",
+                "password": "admin"
+            },
+            "admin": {
+                "email": "admin@example.com",
+                "password": "admin"
+            }
+        }
+    }
+}
