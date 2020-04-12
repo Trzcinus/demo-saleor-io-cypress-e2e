@@ -1,0 +1,20 @@
+image: cypress/base:10.15.3
+.gitlab-runner: &only-release
+  tags:
+    - generic
+
+cypress-e2e:
+  <<: *only-release
+  script:
+     - npm install
+     - npm run eslint
+     - $(npm bin)/cypress run
+
+  artifacts:
+    when: always
+    paths:
+      - cypress/videos/**/*.mp4
+      - cypress/videos/**/**/*.mp4
+      - cypress/screenshots/**/*.png
+       cypress/screenshots/**/**/*.png
+    expire_in: 3 day
